@@ -9,7 +9,7 @@
 #define FULL_X 650.0f
 #define LINE_SPACE 60.0f
 
-#define INTERVAL 100
+#define INTERVAL 15
 
 #define MAX_CHAR 128
 
@@ -21,12 +21,14 @@
 #define FONT_NAME_4 "BreamCatcher"
 #define FONT_NAME_5 "iCielKermel"
 #define FONT_NAME_6 "akaDylan"
+#define FONT_NAME_7 "Zaratustra"
+#define FONT_NAME_8 "Terbert"
 
 int POS_X, POS_Y;
 
-char Font_Name[] = FONT_NAME_6;
-char Text[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ! HOW DO YOU THINK ABOUT THIS FONT?";
-// char Text[] = "abcdefghijklmnopqrstuvwxyz! How do you think about this font?";
+char Font_Name[] = FONT_NAME_8;
+//char Text[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ! HOW DO YOU THINK ABOUT THIS FONT?";
+char Text[] = "abcdef ghijkl mnopqr stuvwx yzABCD EFGHIJ KLMNOP QRSTUV WXYZ ()[],./";
 int Length;
 
 Image Img_Char[MAX_CHAR];
@@ -100,10 +102,6 @@ void Display() {
         c++;
         i++;
     }
-    Rct.Left = Rct.Right;
-    Rct.Right = Rct.Left + Img_Char[46].w;
-    Map_Texture(&Img_Char[46]);
-    Draw_Rect(&Rct);
     glutSwapBuffers();
 }
 

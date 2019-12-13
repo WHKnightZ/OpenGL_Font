@@ -28,4 +28,8 @@ In .fnt files, you can read them by Notepad/Notepad++, in these files, you can s
 
 ![Image](https://i.imgur.com/aKUtzRy.png)
 
+## Update:
+
+Add 2 New fonts, Dialog
+
 --- End ---

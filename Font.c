@@ -62,7 +62,7 @@ void Init_Global() {
     gluOrtho2D(0, WIDTH, HEIGHT, 0);
     glViewport(0, 0, WIDTH, HEIGHT);
     glMatrixMode(GL_MODELVIEW);
-    glClearColor(0.2f, 0.4f, 0.6f, 1.0f);
+    glClearColor(0.2f, 0.2f, 0.4f, 1.0f);
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

@@ -30,6 +30,26 @@ In .fnt files, you can read them by Notepad/Notepad++, in these files, you can s
 
 ## Update:
 
-Add 2 New fonts, Dialog
+v2.0:
+Remove Shared Height of Characters
+
+- First number is Count of Characters
+- All the next lines are info of characters
+- Id, x, y, w, h, xo, yo, wf
+- Id: ID of character in ASCII table, e.g. A is 65
+- x: x crop position in Image
+- y: y crop position in Image
+- w: Width of character crop
+- h: Height of character crop
+- xo: x Offset when draw characters
+- yo: y Offset when draw characters
+- wf: Width Full: Finally Width of Character
+
+Draw characters follow by offset x and y, after draw, translate cursor by width full of this character
+
+Insert some new function:
+- Font_Init(): Init font from file
+- Font_Set(int Type): Set Type of font you want to draw
+- Font_Draw(char *c, float x, float y): Draw Text *c from position x, y by the font you just set
 
 --- End ---

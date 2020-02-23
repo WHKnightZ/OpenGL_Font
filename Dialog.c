@@ -1,5 +1,5 @@
-#include "../Library/loadpng.h"
 #include "../Library/gl_texture.h"
+#include "../Library/loadpng.h"
 
 #define WIDTH 640
 #define HEIGHT 480

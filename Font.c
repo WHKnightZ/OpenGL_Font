@@ -1,4 +1,9 @@
 #include "../Library/loadpng.h"
+
+#include "../Library/process_image.h"
+
+#include <GL/glut.h>
+
 #include "../Library/gl_texture.h"
 
 #define WIDTH 800
@@ -13,7 +18,7 @@
 
 #define MAX_CHAR 128
 
-#define FONT_OFFSET 3.0f
+#define FONT_OFFSET 0.0f
 
 #define FONT_NAME_1 "Font1"
 #define FONT_NAME_2 "Font2"
@@ -23,10 +28,13 @@
 #define FONT_NAME_6 "akaDylan"
 #define FONT_NAME_7 "Zaratustra"
 #define FONT_NAME_8 "Terbert"
+#define FONT_NAME_9 "Somerset_Barnyard_Small"
+#define FONT_NAME_10 "Somerset_Barnyard_Medium"
+#define FONT_NAME_11 "Somerset_Barnyard_Large"
 
 int POS_X, POS_Y;
 
-char Font_Name[] = FONT_NAME_8;
+char Font_Name[] = FONT_NAME_9;
 //char Text[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ! HOW DO YOU THINK ABOUT THIS FONT?";
 char Text[] = "abcdef ghijkl mnopqr stuvwx yzABCD EFGHIJ KLMNOP QRSTUV WXYZ ()[],./";
 int Length;

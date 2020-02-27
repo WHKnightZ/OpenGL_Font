@@ -16,7 +16,7 @@
 
 #define INTERVAL 15
 
-#define FONT_COUNT 3
+#define FONT_COUNT 5
 #define MAX_CHAR 128
 
 int POS_X, POS_Y;
@@ -26,10 +26,10 @@ typedef struct s_Font {
     Image Img;
 } s_Font;
 
-char Font_Name[][14] = {"courier_new", "comic_sans_ms", "iciel_kermel"};
+char Font_Name[][30] = {"courier_new", "comic_sans_ms", "iciel_kermel", "springtime_daydream", "qarmic_sans"};
 
 //char Text[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ! HOW DO YOU THINK ABOUT THIS FONT?";
-char Text[] = "The quick brown fox jumps";
+char Text[] = "The quick brown fox jumps !@#~<>?";
 int Length;
 
 s_Font Font_Save[FONT_COUNT][MAX_CHAR];
@@ -104,11 +104,15 @@ void Display() {
     glClear(GL_COLOR_BUFFER_BIT);
     glLoadIdentity();
     Font_Set(0);
-    Font_Draw(Text, 100, 50);
+    Font_Draw(Text, 60, 40);
     Font_Set(1);
-    Font_Draw(Text, 100, 150);
+    Font_Draw(Text, 60, 110);
     Font_Set(2);
-    Font_Draw(Text, 100, 250);
+    Font_Draw(Text, 60, 180);
+    Font_Set(3);
+    Font_Draw(Text, 60, 250);
+    Font_Set(4);
+    Font_Draw(Text, 60, 320);
     glutSwapBuffers();
 }
 

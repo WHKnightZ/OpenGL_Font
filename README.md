@@ -51,3 +51,5 @@ Insert some new function:
 - Font_Init(): Init font from file
 - Font_Set(int Type): Set Type of font you want to draw
 - Font_Draw(char *c, float x, float y): Draw Text *c from position x, y by the font you just set
+
+...
